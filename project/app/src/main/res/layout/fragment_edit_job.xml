@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".EditJobFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+            android:id="@+id/selectDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Select\ndate"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
+
+    <EditText
+            android:text="Order Number"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/orderEditText"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="@+id/guideline3"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/clientCompanyEditText"/>
+    <EditText
+            android:text="Phone Number"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/phoneNumberEditText"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="@+id/guideline3"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/customerEditText"/>
+
+    <EditText
+            android:id="@+id/infoEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:minEms="10"
+            android:text="More Info"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/StatusSpinner" />
+    <EditText
+            android:text="Customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/customerEditText"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="@+id/guideline3" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/addressEditText"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressEditText" android:typeface="normal"
+            android:text="Address" android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="@+id/guideline3"/>
+    <TextView
+            android:text="More Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/infoTextView"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/infoEditText"
+            app:layout_constraintBottom_toBottomOf="@+id/infoEditText"/>
+    <TextView
+            android:text="Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statusTextView"
+            android:textSize="14sp"
+            android:textAlignment="center" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/StatusSpinner" app:layout_constraintBottom_toBottomOf="@+id/StatusSpinner"/>
+    <TextView
+            android:text="Phone Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNumberTextView"
+            android:textSize="14sp"
+            android:textAlignment="center" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/phoneNumberEditText"
+            app:layout_constraintBottom_toBottomOf="@+id/phoneNumberEditText"
+            android:contentDescription="You may add multiple phone numbers separated by a new line."/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Date"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/selectDateButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/selectDateButton" />
+
+    <TextView
+            android:id="@+id/editEtaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Time"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etaButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/etaButton"
+            app:layout_constraintVertical_bias="0.545" />
+
+    <TextView
+            android:text="Order Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderNumberTextView"
+            android:textSize="14sp"
+            android:textAlignment="center" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/orderEditText"
+            app:layout_constraintBottom_toBottomOf="@+id/orderEditText"/>
+    <TextView
+            android:text="Company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ClientCompanyextView"
+            android:textSize="14sp" android:textAlignment="center"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintBottom_toBottomOf="@+id/clientCompanyEditText"
+            app:layout_constraintTop_toBottomOf="@+id/earliestArrivalButton"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline3"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.4"/>
+    <TextView
+            android:text="Earliest time\nof arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/windowOfArrivalTextView"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/earliestArrivalButton" app:layout_constraintBottom_toBottomOf="@+id/earliestArrivalButton"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressTextView" android:typeface="normal"
+            android:text="Address" android:textSize="14sp"
+            android:textAlignment="center" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintBottom_toBottomOf="@+id/addressEditText"
+            app:layout_constraintTop_toTopOf="@+id/addressEditText"/>
+    <TextView
+            android:text="Customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/customerTextView"
+            app:layout_constraintTop_toBottomOf="@+id/addressEditText"
+            android:textSize="14sp"
+            android:textAlignment="center" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintBottom_toBottomOf="@+id/customerEditText"/>
+
+    <Button
+            android:id="@+id/earliestArrivalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Select\ntime"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/selectDateButton" />
+
+    <Button
+            android:id="@+id/etaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Select\ntime"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/orderEditText" />
+
+    <Button
+            android:id="@+id/latestArrivalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Select\ntime"
+            app:layout_constraintBottom_toBottomOf="@+id/earliestArrivalButton"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/earliestArrivalButton" />
+    <TextView
+            android:text="Latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" app:layout_constraintStart_toEndOf="@+id/earliestArrivalButton"
+            android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="@+id/earliestArrivalButton"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/earliestArrivalButton"
+            android:layout_marginBottom="8dp"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Company Name"
+            android:id="@+id/clientCompanyEditText"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/earliestArrivalButton" android:textSize="14sp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"/>
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/StatusSpinner" app:layout_constraintStart_toStartOf="@+id/guideline3"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/etaButton"/>
+
+    <EditText
+            android:id="@+id/streetEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:minEms="10"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/infoEditText" />
+
+    <TextView
+            android:id="@+id/streetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Street Address"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/streetEditText"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/streetEditText" />
+
+    <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:minEms="10"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/streetEditText" />
+
+    <TextView
+            android:id="@+id/CityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="City"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cityEditText"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/cityEditText" />
+
+    <EditText
+            android:id="@+id/stateEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:minEms="10"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/cityEditText" />
+    <TextView
+            android:text="More Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stateTextView"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/stateEditText"
+            app:layout_constraintBottom_toBottomOf="@+id/stateEditText"/>
+
+    <EditText
+            android:id="@+id/zipEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:minEms="10"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/stateEditText" />
+
+    <TextView
+            android:id="@+id/zipTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Zip Code"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/zipEditText"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/zipEditText" />
+
+    <EditText
+            android:id="@+id/ssss5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:minEms="10"
+            android:text="More Info"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/zipEditText" />
+    <TextView
+            android:text="More Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/infoT1exssstView4"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/ssss5"
+            app:layout_constraintBottom_toBottomOf="@+id/ssss5"/>
+
+    <EditText
+            android:id="@+id/ssss1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:minEms="10"
+            android:text="More Info"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/ssss5" />
+    <TextView
+            android:text="More Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/infoT1exssstView"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/ssss1"
+            app:layout_constraintBottom_toBottomOf="@+id/ssss1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

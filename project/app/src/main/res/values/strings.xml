@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Service Job Manager</string>
+    <string name="parse_server_url">https://parseapi.back4app.com/</string>
+    <string name="parse_app_id">CN6qbkZISGGL9g9GKKv8NtDUmnJhYuQU1jfiXFXG</string>
+    <string name="parse_client_key">m3ksqpAna1y14fLS9tUU1ZjmEaLznFazdk6T3p2v</string>
+    <string name="title_activity_job_location">Map</string>
+    <string name="title_activity_account">Account</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_job_list">Jobs</string>
+    <string name="title_job_detail">Job Detail</string>
+
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+
+    <string name="FACEBOOK_APP_ID">533542490815341</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">[ACCOUNT_KIT_CLIENT_TOKEN]</string>
+    <string name="title_activity_scratch">scratch</string>
+
+</resources>
